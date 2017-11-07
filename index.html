@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Form Example</title>
+</head>
+<body>
+  <div class="form-container">
+    <form class="pet-form">
+      <h2 class="pet-form-header">Tell us about you and your pet</h2>
+
+      <div class="row">
+        <label class="col-2">
+          <p>Enter first name:</p>
+          <input type="text" name="first_name" placeholder="First Name" required>
+        </label>
+        <label class="col-2">
+          <p>Enter last name:</p>
+          <input type="text" name="last_name" placeholder="Last Name" required>
+        </label>
+      </div>
+
+      <div class="pet-form-input-container">
+        <label>
+          <p>Enter your email:</p>
+          <input type="email" name="email" placeholder="Enter email" required>
+        </label>
+      </div>
+
+      <div class="pet-form-radio-container">
+        <h3>Enter your age range</h3>
+        <div class="row">
+          <label class="col-3">
+            <input type="radio" name="age" value="under_18">
+            Under 18
+          </label>
+
+          <label class="col-3">
+            <input type="radio" name="age" value="between_18_and_65" checked="true">
+            Between 18 and 65
+          </label>
+
+          <label class="col-3">
+            <input type="radio" name="age" value="over_65">
+            65 or older
+          </label>
+        </div>
+      </div>
+
+      <div class="pet-form-checkbox-container">
+        <h3>Which animals do you own?</h3>
+        <label>
+          <input type="checkbox" name="pet" value="dog">
+          Dog
+        </label>
+        <label>
+          <input type="checkbox" name="pet" value="cat">
+          Cat
+        </label>
+      </div>
+
+      <div class="pet-form-comment-container">
+        <h3>Tell us about your pet</h3>
+        <textarea name="pet_info" placeholder="Tell us about your pet here"></textarea>
+      </div>
+      
+      <div class="text-right">
+        <button type="submit" class="button">Submit</button>
+      </div>
+
+
+    </form>
+  </div>
+</body>
+</html>
